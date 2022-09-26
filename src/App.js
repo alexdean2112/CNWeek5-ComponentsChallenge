@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Udemy from './components/Udemy'
+import Airbnb from './components/Airbnb';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p className='Challenge1'>Udemy Challenge</p>
+      <p className='header'>Students are Viewing</p>
+      <Udemy />
+      <p className='Challenge1'>AirBnB Challenge</p>
+      <p className='header'>Just Booked In United Kingdom</p>
+      <Airbnb />
     </div>
   );
 }
